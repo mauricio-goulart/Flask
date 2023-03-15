@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ titulo }}</title>
+    <link rel="stylesheet" href="/static/bootstrap.css">
   </head>
   <body>
     <header>
@@ -12,7 +13,8 @@
     <section>
         <h1>Os melhores jogos</h1>
         {% for jogo in jogos %}
-        <p>{{ jogo }}</p>
+        <h3>{{ jogo.nome }}</h3>
+        <p>{{ jogo.tipo }}</p>
         {% endfor  %}
     </section>
   </body>
