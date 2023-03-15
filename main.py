@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def ola():
-    return render_template('index.html')
+    lista = ['Skyrim','Hogwarts Legacy','The Witcher 3']
+    return render_template('index.html', titulo = 'Mauricio', jogos = lista)
 
 app.run()
 
